@@ -1,0 +1,15 @@
+# Backend
+backend/target/
+*.class
+*.log
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+# Secrets / IDE / OS
+.env
+*.iml
+.idea/
+.vscode/
+.DS_Store
+smart-email-assistant.zip

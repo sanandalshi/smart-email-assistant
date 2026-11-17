@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Email Assistant – Options</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 24px; max-width: 420px; }
+    label { display: block; font-weight: 600; margin: 16px 0 6px; }
+    input, select { width: 100%; padding: 8px; font: inherit; box-sizing: border-box; }
+    button { margin-top: 20px; padding: 8px 18px; font: inherit; cursor: pointer; }
+    #status { color: #188038; margin-left: 10px; }
+    small { color: #5f6368; }
+  </style>
+</head>
+<body>
+  <h2>Smart Email Assistant</h2>
+  <label for="apiUrl">Backend URL</label>
+  <input id="apiUrl" type="url" placeholder="http://localhost:8080" />
+  <small>If you change the host, also add it to <code>host_permissions</code> in manifest.json.</small>
+
+  <label for="tone">Reply tone</label>
+  <select id="tone">
+    <option>None</option>
+    <option>Professional</option>
+    <option>Casual</option>
+    <option>Friendly</option>
+  </select>
+
+  <button id="save">Save</button><span id="status"></span>
+  <script src="options.js"></script>
+</body>
+</html>
